@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 
+
 class HtmlScraper:
 
     def __init__(self, html_body: str):
@@ -11,18 +12,7 @@ class HtmlScraper:
         p_tags = soup.find_all('p')
         p_texts = [p.get_text() for p in p_tags]
         return p_texts
-html_body = """
-<html>
-  <body>
-    <p>This is the first paragraph.</p>
-    <p>This is the second paragraph.</p>
-  </body>
-</html>
-"""
 
-scraper = HtmlScraper(html_body)
-texts = scraper.get_text()
-print(texts)
 
 
 
