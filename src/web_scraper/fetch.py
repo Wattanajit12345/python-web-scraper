@@ -8,7 +8,7 @@ class TableStatics:
         self.df = pd.DataFrame()
 
     def create_table(self) -> pd.DataFrame:
-        # self.df
+        # self.df #
         # |      P - tag     | Count words "Thailand: |
         # | ---------------- | ---------------------- |
         # | Thailand,[b] ... |          1             |
